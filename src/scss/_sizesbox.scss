@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 .img-responsive {
@@ -27,33 +28,83 @@ header {
 
 .search {
   position: absolute;
-  top:0;
   right:0;
+  top:0;
 }
 
 $padding: 14px;
 
 .padding-right {
-  padding: $padding $padding $padding 0;
+  padding: $padding*2 $padding*2 $padding*2 0;
 }
 
 .padding-left {
-  padding: $padding 0 $padding $padding;
+  padding: $padding*2 0 $padding*2 $padding*2;
 }
 
 .padding-all {
-  padding: $padding;
+  padding: $padding*2 $padding;
 }
 
 .padding-topbot {
   padding: $padding 0;
 }
 
-section {
-  padding-top: $padding*4;
-  overflow: auto;
+@media (max-width: 767px) {
+  .padding-right, .padding-left, .padding-all, .padding-topbot {
+    padding: 0;
+  }
 }
 
-hr {
-  margin-top: $padding*4;
+section {
+  overflow: auto;
+  padding-top: $padding*4;
+  >hr {
+    margin-top: $padding*4;
+  }
+}
+
+.box-gd {
+  background-color: lighten($color-blue, 35%);
+  margin: $padding 0;
+  padding: $padding*2;
+  position: relative;
+  img {
+    position: absolute;
+    right: 35px;
+    top: 28px;
+  }
+}
+
+.writer {
+  align-items: center;
+  display: flex;
+  padding: $padding*2 0;
+  &__img--small {
+    border-radius: 50%;
+    height: 49px;
+    margin-right: $padding;
+    width:49px;
+  }
+}
+
+.arrow {
+  box-shadow: 0 7px 14px 0 rgba(50, 50, 67, 0.7);
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 49px;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .logo-small {
+    width: 50%;
+    margin-top: 21px;
+  }
+  .list-inline{
+    padding: 14px;
+  }
 }

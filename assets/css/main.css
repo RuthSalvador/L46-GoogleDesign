@@ -190,51 +190,6 @@
   .column-lg-12 {
     float: left;
     width: 100%; } }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-.img-responsive {
-  width: 100%;
-  height: auto; }
-
-.block-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-@media (min-width: 768px) {
-  body {
-    padding: 70px; } }
-
-header {
-  position: relative; }
-
-.search {
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-.padding-right {
-  padding: 14px 14px 14px 0; }
-
-.padding-left {
-  padding: 14px 0 14px 14px; }
-
-.padding-all {
-  padding: 14px; }
-
-.padding-topbot {
-  padding: 14px 0; }
-
-section {
-  padding-top: 56px;
-  overflow: auto; }
-
-hr {
-  margin-top: 56px; }
-
 .color-base {
   color: #424242; }
 
@@ -320,5 +275,104 @@ li {
 
 .text-justify {
   text-align: justify; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; }
+
+.img-responsive {
+  width: 100%;
+  height: auto; }
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (min-width: 768px) {
+  body {
+    padding: 70px; } }
+
+header {
+  position: relative; }
+
+.search {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.padding-right {
+  padding: 28px 28px 28px 0; }
+
+.padding-left {
+  padding: 28px 0 28px 28px; }
+
+.padding-all {
+  padding: 28px 14px; }
+
+.padding-topbot {
+  padding: 14px 0; }
+
+@media (max-width: 767px) {
+  .padding-right, .padding-left, .padding-all, .padding-topbot {
+    padding: 0; } }
+section {
+  overflow: auto;
+  padding-top: 56px; }
+  section > hr {
+    margin-top: 56px; }
+
+.box-gd {
+  background-color: #ebf2fe;
+  margin: 14px 0;
+  padding: 28px;
+  position: relative; }
+  .box-gd img {
+    position: absolute;
+    right: 35px;
+    top: 28px; }
+
+.writer {
+  align-items: center;
+  display: flex;
+  padding: 28px 0; }
+  .writer__img--small {
+    border-radius: 50%;
+    height: 49px;
+    margin-right: 14px;
+    width: 49px; }
+
+.arrow {
+  box-shadow: 0 7px 14px 0 rgba(50, 50, 67, 0.7);
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 49px;
+  overflow: hidden;
+  text-align: center; }
+
+@media (max-width: 767px) {
+  .logo-small {
+    width: 50%;
+    margin-top: 21px; }
+
+  .list-inline {
+    padding: 14px; } }
+.social__facebook {
+  height: 24px;
+  width: 24px; }
+.social__twitter {
+  height: 36px;
+  width: 36px; }
+
+.sub-foot {
+  border-top: 2px solid #e8e8e8;
+  padding: 35px 0; }
+  .sub-foot img {
+    height: 32px;
+    width: 32px; }
 
 /*# sourceMappingURL=main.css.map */

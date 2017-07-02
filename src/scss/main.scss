@@ -1,4 +1,24 @@
 @import "resolutions";
-@import "sizesbox";
 @import "color";
 @import "fonts";
+@import "sizesbox";
+
+.social {
+  &__facebook {
+    height: 24px;
+    width: 24px;
+  }
+  &__twitter {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+.sub-foot {
+  border-top: 2px solid lighten($color-base, 65%);
+  padding: 35px 0;
+  img {
+    height: 32px;
+    width: 32px;
+  }
+}
