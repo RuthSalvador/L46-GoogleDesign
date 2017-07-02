@@ -1,0 +1,14 @@
+$color-base: rgb(66,66,66);
+$color-text: rgb(65,69,73);
+$color-blue: rgb(66,133,244);
+$colors: (base: $color-base, light: lighten($color-base,11%), text: $color-text, dark: darken($color-base,13%), blue: $color-blue);
+
+@each $class, $color in $colors {
+  .color-#{$class} {
+    color: $color;
+  }
+}
+
+hr {
+  border: 2px solid $color-blue;
+}

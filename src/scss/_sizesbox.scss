@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  @media (min-width: 768px) {
+    padding: 70px;
+  }
+}
+
+header {
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+$padding: 14px;
+
+.padding-right {
+  padding: $padding $padding $padding 0;
+}
+
+.padding-left {
+  padding: $padding 0 $padding $padding;
+}
+
+.padding-all {
+  padding: $padding;
+}
+
+.padding-topbot {
+  padding: $padding 0;
+}
+
+section {
+  padding-top: $padding*4;
+  overflow: auto;
+}
+
+hr {
+  margin-top: $padding*4;
+}
